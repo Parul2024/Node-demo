@@ -1,4 +1,4 @@
-const {readFile , writeFile}=require('fs')
+const {readFile , writeFile}= require('fs')
 
 console.log('start..');
 
@@ -12,7 +12,7 @@ readFile('./content/first.txt','utf8',(err,result)=>{
     writeFile('./content/result-sync.txt',
         `this is new asynchronous method of writting:${first}`,{flag:'a'}
         ,(err,result)=>{
-        if(err){
+        if(err){ 
             console.log(err);
             return;
         }
